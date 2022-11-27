@@ -1,0 +1,15 @@
+#outerContainer{
+    background-color: #E5F0FD;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#innerContainer{
+    width: 75%;
+    padding: 30px 0 50px;
+}
+
+#offer{
+    padding-top: 40px;
+}

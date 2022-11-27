@@ -11,7 +11,7 @@ export default function ContactForm() {
           </p>
           <form
             id={styles.contactForm}
-            action={process.env.HEROTOFU}
+            action={process.env.REACT_APP_HEROTOFU}
             method="post"
           >
             <div id={styles.nameSection}>
@@ -38,7 +38,9 @@ export default function ContactForm() {
               <textarea name="Help" id="help" type="text" />
             </div>
             <div id={styles.submitHolder}>
-                        <button id={styles.submitButton} type="submit" value="Submit">Submit</button>
+              <button id={styles.submitButton} type="submit" value="Submit">
+                Submit
+              </button>
             </div>
           </form>
         </div>

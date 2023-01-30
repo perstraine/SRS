@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
 }
 
 #innerContainer{
@@ -20,4 +21,24 @@
 #hero{
     width: 60%;
     padding-left:30px ;
+}
+
+#special{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    width: 100%;
+    align-items: center;
+}
+
+#specialTitle{
+    font-weight: 800;
+    text-decoration: underline;
+    width: 80%;
+    padding: 10px 0 20px;
+}
+
+#specialtext{
+    width: 80%;
+    padding: 10px 0 40px;
 }

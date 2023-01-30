@@ -11,7 +11,11 @@
     flex-direction: column;
     padding: 30px 0 50px;
 }
-
+#title{
+    padding-top: 20px;
+    font-size: 30px;
+    color: #266386;
+}
 #contactForm{
     display: flex;
     flex-direction: column;
@@ -22,6 +26,8 @@
     border: none;
     font-size: 22px;
     height: 40px;
+    border: solid 1px #266386;
+
 }
 
 #nameSection{
@@ -44,6 +50,7 @@
     font-weight: 700;
     width: 48%;
     padding: 15px 0;
+    
 }
 
 .formItem label{
@@ -59,6 +66,7 @@
     border: none;
     resize: none;
     height: 200px;
+    border: solid 1px #266386;
 }
 
 #submitHolder{
@@ -72,4 +80,5 @@
     font-weight: 700;
     padding: 15px 30px;
     border: none;
+    border-radius: 5px;
 }

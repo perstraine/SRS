@@ -6,7 +6,7 @@ export default function Ceiling() {
     <div id={styles.outerContainer}>
       <img id={styles.hero} src={image} alt="Placeholder"></img>
       <div id={styles.innerContainer}>
-        <div id={styles.title}>Susupended Ceiling Seismic Restraint</div>
+        <div id={styles.title}>Suspended Ceiling Seismic Restraint</div>
         <p>
           Suspended ceilings are an integral part of a building space. In recent
           times, numerous different types of ceiling grids have been developed

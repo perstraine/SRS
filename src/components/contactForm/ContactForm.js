@@ -23,12 +23,12 @@ export default function ContactForm() {
           </p>
           <form
             id={styles.contactForm}
-            action={process.env.REACT_APP_HEROTOFU}
-            method="post"
-            // onSubmit={(e) => {
-            //   e.preventDefault()
-            //   submitForm(e.target);
-            // }}
+            // action={process.env.REACT_APP_HEROTOFU}
+            // method="post"
+            onSubmit={(e) => {
+              e.preventDefault()
+              submitForm(e.target);
+            }}
           >
             <div id={styles.nameSection}>
               <div className={styles.formItem}>

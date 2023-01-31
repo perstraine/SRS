@@ -58,7 +58,7 @@
 
 #activeDrop{
     display: block;
-    position: fixed;
+    position: absolute;
     background: #84a7bb;
     width: 160px;
 

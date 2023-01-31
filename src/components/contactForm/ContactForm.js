@@ -1,14 +1,15 @@
 import styles from './ContactForm.module.css'
 import axios from "axios";
+import { useNavigate } from 'react-router-dom';
 export default function ContactForm() {
-
+  const navigate = useNavigate();
   const submitForm = (items) => {
     const object = {}
     for (let i = 0; i < 4; i++) {
       object[items[i].name] = items[i].value;
     }
     console.log(object);
-    axios.post("/.netlify/functions/sendgrid", object).catch((error) => {
+    axios.post("/.netlify/functions/sendgrid", object).then(()=>{navigate('/thanks')}).catch((error) => {
       console.log(error);
     })
   }

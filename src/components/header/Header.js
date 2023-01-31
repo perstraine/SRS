@@ -9,7 +9,6 @@ export default function Header() {
     const navigate = useNavigate();
     const location = useLocation();
   const [active, setActive] = useState(location.pathname)
-  console.log(active);
   const [drop, setDrop] = useState(false)
     return (
       <div id={styles.headerContainer}>

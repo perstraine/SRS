@@ -6,8 +6,8 @@ exports.handler = async function (event, context) {
   //send grid API key
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   // default email address to send email to, this needs to be the same email that is verified on sendgrid during setup
-  const defaultEmail = "prashantk-@outlook.com";
-  const toEmail = "perstraine@gmail.com";
+  const defaultEmail = "perstraine@gmail.com";
+  const toEmail = "office@srsengineering.co.nz";
   // const gaylEmail = "g.humphrey@auckland.ac.nz";
 
   //fields used on frontend. Key/values need to be parsed in order to be used or will return as undefined. If you assign the object to a variable on the frontend you will not need to parse on backend.

@@ -6,7 +6,7 @@ exports.handler = async function (event, context) {
   //send grid API key
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   // default email address to send email to, this needs to be the same email that is verified on sendgrid during setup
-  const defaultEmail = "perstraine@gmail.com";
+  const defaultEmail = "noreply@srsengineering.co.nz";
   const toEmail = "office@srsengineering.co.nz";
   // const gaylEmail = "g.humphrey@auckland.ac.nz";
 

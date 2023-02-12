@@ -1,5 +1,5 @@
 #outerContainer{
-    background-color: #E5F0FD;
+    /* background-color: #E5F0FD; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
 }
 
 #innerContainer{
-    width: 75%;
+    width: 900px;
 }
 
 #title{
@@ -19,6 +19,6 @@
 }
 
 #hero{
-    width: 45%;
+    width: 900px;
 
 }

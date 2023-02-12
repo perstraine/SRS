@@ -1,15 +1,15 @@
 #outerContainer{
-    background-color: #E5F0FD;
+    /* background-color: #E5F0FD; */
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
 #innerContainer{
-    width: 75%;
+    width: 1200px;
     display: flex;
     flex-direction: column;
-    padding: 30px 0 50px;
+    padding: 30px 0 50px 20px;
 }
 #title{
     padding-top: 20px;
@@ -19,7 +19,7 @@
 #contactForm{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 600px;
 }
 
 #contactForm input{

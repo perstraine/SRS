@@ -34,19 +34,16 @@ export default function Intro() {
             country. These are just a few of the projects we have worked on:
           </p>
           <ul>
-            <li>Commercial Bay</li>
-            <li>Various Auckland University buildings</li>
-            <li>Auckland Airport</li>
-            <li>New Waikeria Prison</li>
-            <li>Westfield Newmarket</li>
-            <li>Christchurch Airport Hotel</li>
-            <li>Horizon Hotel, Auckland</li>
-            <li>Langlands Hotel, Invercargill</li>
-            <li>Queenstown Airport</li>
-            <li>Hamilton Airport</li>
-            <li>Various Countdown stores</li>
-            <li>Various Hospital Buildings</li>
-            <li>Various Retirement Villages</li>
+            <li>Shopping Complexes and Malls</li>
+            <li>International Airports</li>
+            <li>Domestic Airports</li>
+            <li>Hospital Buildings and Facilities</li>
+            <li>Large Scale Supermarkets</li>
+            <li>University Buildings and Campus Facilities</li>
+            <li>Retirement Villages</li>
+            <li>Hotels and Accommodation Buildings</li>
+            <li>Prison Buildings</li>
+            <li>National Buildings and Facilities</li>
           </ul>
         </div>
       </div>

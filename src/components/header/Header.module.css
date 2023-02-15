@@ -21,7 +21,7 @@
 }
 
 #logoContainer{
-    width: 40%;
+    /* width: 40%; */
     padding: 10px 0 0 30px;
     display: flex;
     justify-content: space-around;
@@ -35,9 +35,10 @@
     font-style: italic;
     font-weight: 600;
     color: #266386;
+    padding-left: 30px;
 }
 
-#navbarModal[isOpen=true]{
+#navbarModal[isopen=true]{
     position: fixed;
     width: 100%;
     display: flex;
@@ -46,11 +47,11 @@
     height: 100%;
 }
 
-#navbarModal[isOpen=false]{
+#navbarModal[isopen=false]{
     display: none;
 }
 
-#navbar[isOpen=true]{
+#navbar[isopen=true]{
     background-color: white;
     display: flex;
     width: 250px;
@@ -59,7 +60,7 @@
     box-shadow: -2px 0 5px grey;
     
 }
-#navbar[isOpen=false]{
+#navbar[isopen=false]{
     display: none;
 }
 
@@ -92,6 +93,10 @@
 
 }
 
+#inlineActiveDrop{
+    display: none
+}
+
 #inactiveDrop{
     display: none;
 }
@@ -107,25 +112,58 @@
     color: white;
 }
 
-#hamburger[isOpen=false]{
+#hamburger[isopen=false]{
     font-size: 20px;
     font-weight: 700;
     padding-right: 20px;
     cursor: pointer;
 }
 
-#hamburger[isOpen=true]{
+#hamburger[isopen=true]{
     display: none;
 }
 
-#close[isOpen=true]{
+#close[isopen=true]{
    font-size: 20px;
     font-weight: 700;
-padding: 20px 20px 10px;
+    padding: 20px 20px 10px;
     cursor: pointer;
     text-align: end;
 }
 
-#close[isOpen=false]{
+#close[isopen=false]{
     display: none;
+}
+
+@media screen and (max-width: 550px){
+    #motto{
+        display: none;
+    }
+
+    #logo{
+        width: 80px;
+    }
+    #headerContainer{
+        height: auto;
+    }
+
+    #navbar[isopen=true]{
+        width: 200px;
+    }
+
+    .navItem{
+        padding: 10px 0;
+    }
+
+    #activeDrop{
+        display: none;
+    }
+    #inlineActiveDrop{
+        display: block;
+        padding-top: 5px;
+    }
+
+    .dropItem{
+        width: 200px;
+    }
 }

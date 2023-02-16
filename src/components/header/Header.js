@@ -186,6 +186,7 @@ export default function Header() {
                 Our Mission
               </div>
               <div
+                under = "true"
                 id={active === "/contact" ? styles.active : null}
                 className={styles.navItem}
                 onClick={() => {
@@ -193,8 +194,9 @@ export default function Header() {
                   navigate("/contact");
                   setIsOpen("false");
                 }}
+                style={{borderBottom: "1px solid #266386;"}}
               >
-                Contact
+                Contact Us
               </div>
             </div>
           </div>

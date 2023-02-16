@@ -20,12 +20,11 @@ export default function ContactForm() {
           <p>
             For enquiries or quotes, please email{" "}
             <span id={styles.officeemail}>office@srsengineering.co.nz</span> or
-            fill out the form below
+            fill out the form below.
           </p>
+          <p>*Required</p>
           <form
             id={styles.contactForm}
-            // action={process.env.REACT_APP_HEROTOFU}
-            // method="post"
             onSubmit={(e) => {
               e.preventDefault()
               submitForm(e.target);

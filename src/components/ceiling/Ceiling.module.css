@@ -35,13 +35,42 @@
 #specialTitle{
     font-weight: 800;
     text-decoration: underline;
-        width:1100px;
-
+    width:1100px;
     padding: 10px 0 20px;
 }
 
 #specialtext{
-        width: 1100px;
-
+    width: 1100px;
     padding: 10px 0 40px;
+}
+
+@media screen and (max-width: 1100px) {
+    #specialTitle, #specialtext{
+        width:900px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    #hero{
+        width: 100%;
+    }
+
+    #innerContainer, #specialTitle, #specialtext{
+        width: 600px;
+    }
+    
+}
+
+@media screen and (max-width: 620px){
+    #innerContainer, #specialTitle, #specialtext{
+        width: 400px;
+    }
+    
+}
+
+@media screen and (max-width: 420px){
+    #innerContainer, #specialTitle, #specialtext{
+        width: 95%;
+    }
+    
 }

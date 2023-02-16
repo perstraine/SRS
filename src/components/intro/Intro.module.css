@@ -21,3 +21,28 @@
     width: 900px;
     /* padding-left:30px ; */
 }
+
+@media screen and (max-width: 900px){
+    #hero{
+        width: 100%;
+    }
+
+    #innerContainer{
+        width: 600px;
+}
+    
+}
+
+@media screen and (max-width: 620px){
+    #innerContainer{
+        width: 400px;
+}
+    
+}
+
+@media screen and (max-width: 420px){
+    #innerContainer{
+        width: 95%;
+}
+    
+}

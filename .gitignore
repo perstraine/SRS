@@ -28,3 +28,5 @@ yarn-error.log*
 
 /src/components/intro/Introcopy.js
 /src/components/intro/Intro.modulecopy.css
+
+/src/useWindowDimensions.js

@@ -8,7 +8,7 @@ export default function Thanks() {
         <div id={styles.innerContainer}>
           <div id={styles.title}>Thank You!</div>
           <div id={styles.text}>
-            One of our staff will be in touch with you in a few business days.
+            One of our staff will be in touch with you soon.
           </div>
           <div
             id={styles.button}

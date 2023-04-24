@@ -37,167 +37,166 @@ export default function Header() {
           >
             {"\u2630"}
           </div>
-
-          <div id={styles.navbarModal} isopen={isopen}>
+        </div>
+        <div id={styles.navbarModal} isopen={isopen}>
+          <div
+            id={drop ? styles.activeDrop : styles.inactiveDrop}
+            onMouseEnter={() => {
+              setDrop(true);
+            }}
+            onMouseLeave={() => {
+              setDrop(false);
+            }}
+          >
             <div
-              id={drop ? styles.activeDrop : styles.inactiveDrop}
+              className={styles.dropItem}
+              onClick={() => {
+                setActive("/suspendedceiling");
+                navigate("/suspendedceiling");
+                setIsOpen("false");
+              }}
+            >
+              Suspended Ceiling
+            </div>
+            <div
+              className={styles.dropItem}
+              onClick={() => {
+                setActive("/wallandparition");
+                navigate("/wallandpartition");
+                setIsOpen("false");
+              }}
+            >
+              Wall & Partition
+            </div>
+            <div
+              className={styles.dropItem}
+              onClick={() => {
+                setActive("/services");
+                navigate("/services");
+                setIsOpen("false");
+              }}
+            >
+              Services
+            </div>
+            <div
+              className={styles.dropItem}
+              onClick={() => {
+                setActive("/specialist");
+                navigate("/specialist");
+                setIsOpen("false");
+              }}
+            >
+              Specialist
+            </div>
+          </div>
+          <div id={styles.navbar} isopen={isopen}>
+            <div
+              id={styles.close}
+              isopen={isopen}
+              onClick={() => {
+                setIsOpen("false");
+              }}
+            >
+              {"\u2716"}
+            </div>
+            <div
+              id={active === "/" ? styles.active : null}
+              className={styles.navItem}
+              onClick={() => {
+                setActive("/");
+                navigate("/");
+                setIsOpen("false");
+              }}
+            >
+              Home
+            </div>
+            <div
+              className={styles.navItem}
               onMouseEnter={() => {
                 setDrop(true);
               }}
               onMouseLeave={() => {
                 setDrop(false);
               }}
+              onClick={() => {
+                setDrop(!drop);
+              }}
             >
+              What We Do <FontAwesomeIcon icon={faAngleDown} />
               <div
-                className={styles.dropItem}
-                onClick={() => {
-                  setActive("/suspendedceiling");
-                  navigate("/suspendedceiling");
-                  setIsOpen("false");
-                }}
-              >
-                Suspended Ceiling
-              </div>
-              <div
-                className={styles.dropItem}
-                onClick={() => {
-                  setActive("/wallandparition");
-                  navigate("/wallandpartition");
-                  setIsOpen("false");
-                }}
-              >
-                Wall & Partition
-              </div>
-              <div
-                className={styles.dropItem}
-                onClick={() => {
-                  setActive("/services");
-                  navigate("/services");
-                  setIsOpen("false");
-                }}
-              >
-                Services
-              </div>
-              <div
-                className={styles.dropItem}
-                onClick={() => {
-                  setActive("/specialist");
-                  navigate("/specialist");
-                  setIsOpen("false");
-                }}
-              >
-                Specialist
-              </div>
-            </div>
-            <div id={styles.navbar} isopen={isopen}>
-              <div
-                id={styles.close}
-                isopen={isopen}
-                onClick={() => {
-                  setIsOpen("false");
-                }}
-              >
-                {"\u2716"}
-              </div>
-              <div
-                id={active === "/" ? styles.active : null}
-                className={styles.navItem}
-                onClick={() => {
-                  setActive("/");
-                  navigate("/");
-                  setIsOpen("false");
-                }}
-              >
-                Home
-              </div>
-              <div
-                className={styles.navItem}
+                id={drop ? styles.inlineActiveDrop : styles.inactiveDrop}
                 onMouseEnter={() => {
                   setDrop(true);
                 }}
                 onMouseLeave={() => {
                   setDrop(false);
                 }}
-                onClick={() => {
-                  setDrop(!drop);
-                }}
               >
-                What We Do <FontAwesomeIcon icon={faAngleDown} />
                 <div
-                  id={drop ? styles.inlineActiveDrop : styles.inactiveDrop}
-                  onMouseEnter={() => {
-                    setDrop(true);
-                  }}
-                  onMouseLeave={() => {
-                    setDrop(false);
+                  className={styles.dropItem}
+                  onClick={() => {
+                    setActive("/suspendedceiling");
+                    navigate("/suspendedceiling");
+                    setIsOpen("false");
                   }}
                 >
-                  <div
-                    className={styles.dropItem}
-                    onClick={() => {
-                      setActive("/suspendedceiling");
-                      navigate("/suspendedceiling");
-                      setIsOpen("false");
-                    }}
-                  >
-                    Suspended Ceiling
-                  </div>
-                  <div
-                    className={styles.dropItem}
-                    onClick={() => {
-                      setActive("/wallandparition");
-                      navigate("/wallandpartition");
-                      setIsOpen("false");
-                    }}
-                  >
-                    Wall & Partition
-                  </div>
-                  <div
-                    className={styles.dropItem}
-                    onClick={() => {
-                      setActive("/services");
-                      navigate("/services");
-                      setIsOpen("false");
-                    }}
-                  >
-                    Services
-                  </div>
-                  <div
-                    className={styles.dropItem}
-                    onClick={() => {
-                      setActive("/specialist");
-                      navigate("/specialist");
-                      setIsOpen("false");
-                    }}
-                  >
-                    Specialist
-                  </div>
+                  Suspended Ceiling
+                </div>
+                <div
+                  className={styles.dropItem}
+                  onClick={() => {
+                    setActive("/wallandparition");
+                    navigate("/wallandpartition");
+                    setIsOpen("false");
+                  }}
+                >
+                  Wall & Partition
+                </div>
+                <div
+                  className={styles.dropItem}
+                  onClick={() => {
+                    setActive("/services");
+                    navigate("/services");
+                    setIsOpen("false");
+                  }}
+                >
+                  Services
+                </div>
+                <div
+                  className={styles.dropItem}
+                  onClick={() => {
+                    setActive("/specialist");
+                    navigate("/specialist");
+                    setIsOpen("false");
+                  }}
+                >
+                  Specialist
                 </div>
               </div>
-              <div
-                id={active === "/mission" ? styles.active : null}
-                className={styles.navItem}
-                onClick={() => {
-                  setActive("/mission");
-                  navigate("/mission");
-                  setIsOpen("false");
-                }}
-              >
-                Our Mission
-              </div>
-              <div
-                under = "true"
-                id={active === "/contact" ? styles.active : null}
-                className={styles.navItem}
-                onClick={() => {
-                  setActive("/contact");
-                  navigate("/contact");
-                  setIsOpen("false");
-                }}
-                style={{borderBottom: "1px solid #266386;"}}
-              >
-                Contact Us
-              </div>
+            </div>
+            <div
+              id={active === "/mission" ? styles.active : null}
+              className={styles.navItem}
+              onClick={() => {
+                setActive("/mission");
+                navigate("/mission");
+                setIsOpen("false");
+              }}
+            >
+              Our Mission
+            </div>
+            <div
+              under="true"
+              id={active === "/contact" ? styles.active : null}
+              className={styles.navItem}
+              onClick={() => {
+                setActive("/contact");
+                navigate("/contact");
+                setIsOpen("false");
+              }}
+              style={{ borderBottom: "1px solid #266386" }}
+            >
+              Contact Us
             </div>
           </div>
         </div>

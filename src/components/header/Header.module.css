@@ -1,10 +1,11 @@
 #headerContainer{
+    background-color: #106699;
     display: flex;
     width: 100%;
     height: 83px;
     flex-direction: column;
     align-items: center;
-    border-bottom: solid 1px black;
+    /* border-bottom: solid 1px black; */
 }
 
 #logomotto{
@@ -22,7 +23,7 @@
 
 #logoContainer{
     /* width: 40%; */
-    padding: 10px 0 0 30px;
+    padding: 3px 0 0 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -34,12 +35,11 @@
     font-size: 18px;
     font-style: italic;
     font-weight: 600;
-    color: #266386;
+    color: white;
     padding-left: 30px;
 }
 
-#navbarModal[isopen=true]{
-    position: fixed;
+/* #navbarModal[isopen=true]{
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -49,19 +49,37 @@
 
 #navbarModal[isopen=false]{
     display: none;
-}
+} */
 
 #navbar[isopen=true]{
+    position: fixed;
+    right:0;
+    top:0;
     background-color: white;
     display: flex;
     width: 250px;
+    height: 100%;
     /* justify-content: space-between; */
     flex-direction: column;
     box-shadow: -2px 0 5px grey;
-    
+    transform: translateX(0%);
+	transition: all 0.3s ease-in-out;
 }
 #navbar[isopen=false]{
-    display: none;
+    /* display: none; */
+        position: fixed;
+    right:0;
+    top:0;
+        background-color: white;
+    display: flex;
+    width: 250px;
+    height: 100%;
+
+    /* justify-content: space-between; */
+    flex-direction: column;
+    box-shadow: -2px 0 5px grey;
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
 }
 
 #active{
@@ -124,22 +142,19 @@
     font-weight: 700;
     padding-right: 20px;
     cursor: pointer;
+    color: white;
 }
 
 #hamburger[isopen=true]{
     display: none;
 }
 
-#close[isopen=true]{
+#close{
    font-size: 20px;
     font-weight: 700;
     padding: 20px 20px 10px;
     cursor: pointer;
     text-align: end;
-}
-
-#close[isopen=false]{
-    display: none;
 }
 
 @media screen and (max-width: 550px){
@@ -174,7 +189,7 @@
         width: 200px;
     }
 
-    #close[isopen=true]{
+    #close{
         padding: 10px 20px 10px;
     }
 }

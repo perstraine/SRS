@@ -1,7 +1,7 @@
-import styles from "./Mission.module.css";
+import styles from "./Home.module.css";
 import image from "../../assets/mission.jpg";
 
-export default function Mission() {
+export default function Home() {
   return (
     <div id={styles.outerContainer}>
       <div id={styles.innerContainer}>

@@ -1,7 +1,7 @@
-import styles from './Intro.module.css'
+import styles from './About.module.css'
 import image from '../../assets/home/hero.jpg'
 
-export default function Intro() {
+export default function About() {
     return (
       <div id={styles.outerContainer}>
         <img id={styles.hero} src={image} alt="Placeholder"></img>

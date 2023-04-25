@@ -175,15 +175,15 @@ export default function Header() {
               </div>
             </div>
             <div
-              id={active === "/mission" ? styles.active : null}
+              id={active === "/about" ? styles.active : null}
               className={styles.navItem}
               onClick={() => {
-                setActive("/mission");
-                navigate("/mission");
+                setActive("/about");
+                navigate("/about");
                 setIsOpen("false");
               }}
             >
-              Our Mission
+              About Us
             </div>
             <div
               under="true"

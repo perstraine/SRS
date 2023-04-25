@@ -108,11 +108,13 @@
 }
 
 #activeDrop{
-    display: block;
+    position:absolute;
+    right: 250px;
     background: white;
     width: 150px;
     height: fit-content;
-    margin-top: 131px;
+    margin-left: 50%;
+    margin-top: 50px;
     text-align: center;
     box-shadow: -2px 0 5px grey;
 

@@ -1,9 +1,14 @@
 import styles from "./Home.module.css";
-import image from "../../assets/mission.jpg";
+import HomeHeader from "./nav/HomeHeader";
+import ServicesSection from "./services/ServicesSection";
+import image from './assets/bottom.jpg'
 
 export default function Home() {
   return (
     <div id={styles.outerContainer}>
+      <HomeHeader />
+      <div id={styles.hero} />
+      <ServicesSection />
       <div id={styles.innerContainer}>
         <div id={styles.title}>Our Mission</div>
         <p>
@@ -21,8 +26,6 @@ export default function Home() {
           timelines, with continued and honest communication between everyone
           involved.
         </p>
-        <img id={styles.hero} src={image} alt="Placeholder"></img>
-
         <p>
           We can provide our services for residential or commercial buildings
           and get involved at any stage of the project directly under a project
@@ -40,6 +43,7 @@ export default function Home() {
           The team at SRS look forward to hearing from you in the near future.
         </p>
       </div>
+      <img id={styles.hero} src={image} alt="Placeholder"></img>
     </div>
   );
 }

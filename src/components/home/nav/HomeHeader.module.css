@@ -1,0 +1,197 @@
+#headerContainer{
+    /* background-color: #106699; */
+    display: flex;
+    width: 100%;
+    height: 83px;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    /* border-bottom: solid 1px black; */
+}
+
+#logomotto{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 150px;
+    cursor: pointer;
+
+}
+
+#logoContainer{
+    /* width: 40%; */
+    padding: 3px 0 0 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#motto{
+    width: 280px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    color: white;
+    padding-left: 30px;
+}
+
+/* #navbarModal[isopen=true]{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    top:0;
+    height: 100%;
+}
+
+#navbarModal[isopen=false]{
+    display: none;
+} */
+
+#navbar[isopen=true]{
+    position: fixed;
+    right:0;
+    top:0;
+    background-color: white;
+    display: flex;
+    width: 250px;
+    height: 100%;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    box-shadow: -2px 0 5px grey;
+    transform: translateX(0%);
+	transition: all 0.3s ease-in-out;
+}
+#navbar[isopen=false]{
+    /* display: none; */
+        position: fixed;
+    right:0;
+    top:0;
+        background-color: white;
+    display: flex;
+    width: 250px;
+    height: 100%;
+
+    /* justify-content: space-between; */
+    flex-direction: column;
+    box-shadow: -2px 0 5px grey;
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
+}
+
+#active{
+    font-weight: 700;
+}
+
+.navItem{
+    width: 100%;
+    font-size: 18px;
+    padding: 20px 0;
+    color: #266386;
+    cursor: pointer;
+    text-align: center;
+    border-top: #266386 solid 1px;
+}
+
+.navItem[under="true"]{
+    border-bottom: #266386 solid 1px;
+
+}
+
+.navItem:hover{
+    background-color: rgb(202, 202, 202);
+}
+
+#activeDrop{
+    display: block;
+    background: white;
+    width: 150px;
+    height: fit-content;
+    margin-top: 131px;
+    text-align: center;
+    box-shadow: -2px 0 5px grey;
+
+}
+
+#inlineActiveDrop{
+    display: none
+}
+
+#inactiveDrop{
+    display: none;
+}
+.dropItem{
+    font-size: 16px;
+    background: white;
+    border-bottom: #266386 solid 1px;
+    padding: 3px;
+    cursor: pointer;
+
+}
+
+.dropItem:hover{
+    background-color: grey;
+    color: white;
+}
+
+#hamburger[isopen=false]{
+    font-size: 20px;
+    font-weight: 700;
+    padding-right: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+#hamburger[isopen=true]{
+    display: none;
+}
+
+#close{
+   font-size: 20px;
+    font-weight: 700;
+    padding: 20px 20px 10px;
+    cursor: pointer;
+    text-align: end;
+}
+
+@media screen and (max-width: 550px){
+    #motto{
+        display: none;
+    }
+
+    #logo{
+        width: 80px;
+    }
+    #headerContainer{
+        height: auto;
+    }
+
+    #navbar[isopen=true]{
+        width: 200px;
+    }
+
+    .navItem{
+        padding: 10px 0;
+    }
+
+    #activeDrop{
+        display: none;
+    }
+    #inlineActiveDrop{
+        display: block;
+        padding-top: 5px;
+    }
+
+    .dropItem{
+        width: 200px;
+    }
+
+    #close{
+        padding: 10px 20px 10px;
+    }
+}

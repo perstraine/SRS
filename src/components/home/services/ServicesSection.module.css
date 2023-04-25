@@ -1,0 +1,54 @@
+#outer{
+    padding-top: 50px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+#inner{
+    padding: 50px 60px;
+    width: 1300px;
+    background-color: rgb(199, 199, 199);
+    display: flex;
+    justify-content: space-around;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.tile{
+    position: relative;
+    width: 270px;
+    height: 190px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 5px 5px 2px grey;
+}
+
+.tile:hover{
+    width: 275px;
+    height: 192px;
+}
+
+.tileText{
+    padding-top: 30%;
+    text-shadow: 2px 2px 2px grey;
+}
+
+.tile[tile="ceiling"]{
+    background-image: url('./assets/ceiling.jpg');
+}
+
+.tile[tile="wall"]{
+    background-image: url('./assets/walls.jpg');
+}
+
+.tile[tile="services"]{
+    background-image: url('./assets/services.jpg');
+}
+
+.tile[tile="specialist"]{
+    background-image: url('./assets/specialist.jpg');
+}

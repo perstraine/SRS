@@ -9,14 +9,15 @@ import SpecialistPage from "./pages/SpeciailistPage";
 import WallPage from "./pages/WallPage";
 import CeilingPage from "./pages/CeilingPage";
 import Thanks from "./pages/Thanks";
+import ImageCarousel from "./components/carousel/ImageCarousel";
 function App() {
   return (
     <>
       <BrowserRouter>
-        <ScrollToTop/>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Navigation />}>
-            <Route index element={<LandingPage/>}/>
+            <Route index element={<LandingPage />} />
             <Route path="contact" element={<Contact />} />
             <Route path="about" element={<AboutPage />} />
             <Route path="services" element={<ServicesPage />} />
@@ -24,7 +25,8 @@ function App() {
             <Route path="wallandpartition" element={<WallPage />} />
             <Route path="suspendedceiling" element={<CeilingPage />} />
             <Route path="thanks" element={<Thanks />} />
-            <Route path="*" element={<Navigate to="/"/>}/>
+            <Route path="wew" element={<ImageCarousel />} />
+            <Route path="*" element={<Navigate to="/" />} />
           </Route>
         </Routes>
       </BrowserRouter>

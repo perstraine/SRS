@@ -6,6 +6,12 @@ import image from './assets/bottom.jpg'
 export default function Home() {
   return (
     <div id={styles.outerContainer}>
+      <div id={styles.placeholder}>
+        SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC{" "}
+        SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC{" "}
+        SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC
+        SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC{" "}
+      </div>
       <HomeHeader />
       <div id={styles.hero} />
       <ServicesSection />
@@ -43,7 +49,7 @@ export default function Home() {
           The team at SRS look forward to hearing from you in the near future.
         </p>
       </div>
-      <img id={styles.hero} src={image} alt="Placeholder"></img>
+      <img id={styles.bottomhero} src={image} alt="Placeholder"></img>
     </div>
   );
 }

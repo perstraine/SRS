@@ -16,11 +16,6 @@ export default function Navigation() {
           </>
         );
   }
-  if (location.pathname === "/wew") {
-    return (
-      <Outlet/>
-    )
-  }
     return (
       <>
         <div className={styles.wrapper}>

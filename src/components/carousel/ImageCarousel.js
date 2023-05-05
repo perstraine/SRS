@@ -1,3 +1,4 @@
+//--------------------------------Swiperjs---------------------------------------------//
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import { Pagination, Navigation } from "swiper";
 // import "swiper/css";
@@ -35,62 +36,106 @@
 //     );
 // }
 
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+//--------------------------- Multi-Carousel----------------------------------------------//
+
+// import Carousel from "react-multi-carousel";
+// import "react-multi-carousel/lib/styles.css";
+
+// import "./ImageCarousel.css";
+// import image1 from "../ceiling/assets/A.jpg";
+// import image2 from "../ceiling/assets/B.jpg";
+// import image3 from "../ceiling/assets/C.jpg";
+
+// const responsive = {
+//   desktop: {
+//     breakpoint: { max: 3000, min: 1024 },
+//     items: 1,
+//     slidesToSlide: 1, // optional, default to 1.
+//   },
+//   tablet: {
+//     breakpoint: { max: 1024, min: 464 },
+//     items: 1,
+//     slidesToSlide: 1, // optional, default to 1.
+//     partialVisibilityGutter: 0,
+//   },
+//   mobile: {
+//     breakpoint: { max: 464, min: 0 },
+//     items: 1,
+//     slidesToSlide: 1, // optional, default to 1.
+//     partialVisibilityGutter: 1000,
+//   },
+// };
+
+// export default function ImageCarousel() {
+//   const images = [image1, image2, image3];
+//   return (
+//     <>
+//       <div
+//         style={{
+//           paddingBottom: "30px",
+//           position: "relative",
+//         }}
+//       >
+//         <Carousel
+//           responsive={responsive}
+//           infinite={true}
+//           showDots={true}
+//           centerMode={true}
+//                   renderDotsOutside={true}
+//                   draggable={false}
+
+//         >
+//           {images.map((image, index) => {
+//             return (
+//               <div className="carouselImageHolder" key={index}>
+//                 <img className="carouselImage" src={image} alt="" />
+//               </div>
+//             );
+//           })}
+//         </Carousel>
+//       </div>
+//     </>
+//   );
+// }
+
+//-------------------------------------Mantine Carousel-----------------------------------//
+
+import { Carousel } from "@mantine/carousel";
+import { useState } from "react";
 
 import "./ImageCarousel.css";
 import image1 from "../ceiling/assets/A.jpg";
 import image2 from "../ceiling/assets/B.jpg";
 import image3 from "../ceiling/assets/C.jpg";
 
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 1,
-    slidesToSlide: 1, // optional, default to 1.
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 1,
-    slidesToSlide: 1, // optional, default to 1.
-    partialVisibilityGutter: 0,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    slidesToSlide: 1, // optional, default to 1.
-    partialVisibilityGutter: 1000,
-  },
-};
-
 export default function ImageCarousel() {
   const images = [image1, image2, image3];
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <>
-      <div
-        style={{
-          paddingBottom: "30px",
-          position: "relative",
+      <Carousel
+        slideSize={1000}
+        height={582}
+        slideGap="lg"
+        loop
+        onSlideChange={(number) => {
+          setActiveIndex(number);
         }}
+        withIndicators
       >
-        <Carousel
-          responsive={responsive}
-          infinite={true}
-          showDots={true}
-          centerMode={true}
-                  renderDotsOutside={true}
-                  draggable={false}
-
-        >
-          {images.map((image, index) => {
-            return (
-              <div className="carouselImageHolder" key={index}>
-                <img className="carouselImage" src={image} alt="" />
-              </div>
-            );
-          })}
-        </Carousel>
-      </div>
+        {images.map((image, index) => {
+          return (
+            <Carousel.Slide>
+              <img
+                className={activeIndex === index ? "activeSlide" : "slide"}
+                src={image}
+                alt=""
+              />
+            </Carousel.Slide>
+          );
+        })}
+      </Carousel>
     </>
   );
 }

@@ -9,7 +9,6 @@ import SpecialistPage from "./pages/SpeciailistPage";
 import WallPage from "./pages/WallPage";
 import CeilingPage from "./pages/CeilingPage";
 import Thanks from "./pages/Thanks";
-import ImageCarousel from "./components/carousel/ImageCarousel";
 function App() {
   return (
     <>
@@ -25,7 +24,6 @@ function App() {
             <Route path="wallandpartition" element={<WallPage />} />
             <Route path="suspendedceiling" element={<CeilingPage />} />
             <Route path="thanks" element={<Thanks />} />
-            <Route path="wew" element={<ImageCarousel />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Route>
         </Routes>

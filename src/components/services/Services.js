@@ -44,11 +44,15 @@ export default function Services() {
         <div id={styles.special}>
           <div id={styles.specialTitle}>What We Offer:</div>
           <div id={styles.specialtext}>
-            Seismic bracing design and PS1 documentation | Construction
-            monitoring and PS4 documentation | Design reviews | Assessment of
-            existing building services seismic bracing | Seismic restraint
-            assessment of existing floor fixed units | Assessment as part of
-            Technical Due Diligence | Remedial design | Consultancy services
+            <ul>
+              <li>Seismic bracing design and PS1 documentation</li>
+              <li>Construction monitoring and PS4 documentation</li>
+              <li>Design reviews</li>
+              <li>Assessment of existing building services seismic bracing</li>
+              <li>Assessment as part of Technical Due Diligence</li>
+              <li>Remedial design</li>
+              <li>Consultancy services</li>
+            </ul>
           </div>
         </div>
       </div>

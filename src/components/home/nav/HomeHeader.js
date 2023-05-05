@@ -194,7 +194,7 @@ export default function HomeHeader() {
                 navigate("/contact");
                 setIsOpen("false");
               }}
-              style={{ borderBottom: "1px solid #266386" }}
+              // style={{ borderBottom: "1px solid #266386" }}
             >
               Contact Us
             </div>

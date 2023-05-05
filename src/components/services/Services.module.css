@@ -28,20 +28,21 @@
   background-color: gray;
   width: 100%;
   align-items: center;
+  padding-top: 20px;
+
 }
 
 #specialTitle {
   font-weight: 800;
   text-decoration: underline;
   width: 1100px;
+  padding: 20px 0 0;
 
-  padding: 10px 0 20px;
 }
 
 #specialtext {
   width: 1100px;
-
-  padding: 10px 0 40px;
+  padding: 10px 0 20px;
 }
 
 @media screen and (max-width: 1100px) {

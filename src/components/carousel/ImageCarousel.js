@@ -122,9 +122,8 @@ export default function ImageCarousel({images}) {
       >
         {images.map((image, index) => {
           return (
-            <Carousel.Slide>
+            <Carousel.Slide key={index}>
               <img
-                key={index}
                 className={activeIndex === index ? "activeSlide" : "slide"}
                 src={image}
                 alt=""

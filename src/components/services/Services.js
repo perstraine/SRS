@@ -1,10 +1,15 @@
+import ImageCarousel from '../carousel/ImageCarousel';
 import styles from './Services.module.css'
-import image from "../../assets/services.jpg";
+import image1 from './assets/1.jpg'
+import image2 from './assets/2.jpg'
+import image3 from "./assets/3.jpg";
 
 export default function Services() {
-    return (
+  const images = [image1, image2, image3];
+  return (
+    <>
+      <ImageCarousel images={images}/>
       <div id={styles.outerContainer}>
-        <img id={styles.hero} src={image} alt="Placeholder"></img>
         <div id={styles.innerContainer}>
           <div id={styles.title}>Services Seismic Restraint</div>
           <p>
@@ -56,5 +61,6 @@ export default function Services() {
           </div>
         </div>
       </div>
-    );
+    </>
+  );
 }

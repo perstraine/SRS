@@ -104,12 +104,8 @@ import { Carousel } from "@mantine/carousel";
 import { useState } from "react";
 
 import "./ImageCarousel.css";
-import image1 from "../ceiling/assets/A.jpg";
-import image2 from "../ceiling/assets/B.jpg";
-import image3 from "../ceiling/assets/C.jpg";
 
-export default function ImageCarousel() {
-  const images = [image1, image2, image3];
+export default function ImageCarousel({images}) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (

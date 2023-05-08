@@ -20,10 +20,6 @@
     color: #266386;
 }
 
-#hero{
-    width: 900px;
-}
-
 #special{
     display: flex;
     flex-direction: column;
@@ -52,10 +48,6 @@
 }
 
 @media screen and (max-width: 900px){
-    #hero{
-        width: 100%;
-    }
-
     #innerContainer, #specialTitle, #specialtext{
         width: 600px;
     }

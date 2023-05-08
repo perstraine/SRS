@@ -1,5 +1,5 @@
 import styles from './About.module.css'
-import image from '../../assets/home/hero.jpg'
+import image from './hero.jpg'
 
 export default function About() {
     return (

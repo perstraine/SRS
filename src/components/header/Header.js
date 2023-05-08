@@ -54,6 +54,8 @@ export default function Header() {
                 setActive("/suspendedceiling");
                 navigate("/suspendedceiling");
                 setIsOpen("false");
+              setDrop(false);
+
               }}
             >
               Suspended Ceiling
@@ -64,6 +66,8 @@ export default function Header() {
                 setActive("/wallandparition");
                 navigate("/wallandpartition");
                 setIsOpen("false");
+              setDrop(false);
+
               }}
             >
               Wall & Partition
@@ -74,6 +78,8 @@ export default function Header() {
                 setActive("/services");
                 navigate("/services");
                 setIsOpen("false");
+              setDrop(false);
+
               }}
             >
               Services
@@ -84,6 +90,8 @@ export default function Header() {
                 setActive("/specialist");
                 navigate("/specialist");
                 setIsOpen("false");
+              setDrop(false);
+
               }}
             >
               Specialist

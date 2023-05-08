@@ -95,11 +95,11 @@
     color: #266386;
     cursor: pointer;
     text-align: center;
-    /* border-top: #266386 solid 1px; */
+    border-top: #266386 solid 1px;
 }
 
 .navItem[under="true"]{
-    /* border-bottom: #266386 solid 1px; */
+    border-bottom: #266386 solid 1px;
 
 }
 
@@ -161,13 +161,18 @@
     text-align: end;
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width:900px) {
     #motto{
         display: none;
     }
+    
+}
+
+@media screen and (max-width: 650px){
+    
 
     #logo{
-        width: 80px;
+        width: 150px;
     }
     #headerContainer{
         height: auto;
@@ -195,5 +200,16 @@
 
     #close{
         padding: 10px 20px 10px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    #logo{
+        width: 80px;
+    }
+    #hamburger[isopen=false]{
+        font-size: 20px;
+    color: white;
+
     }
 }

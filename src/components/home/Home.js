@@ -12,7 +12,7 @@ export default function Home() {
         SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC
         SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC{" "}
       </div>
-      {/* <HomeHeader /> */}
+      <HomeHeader />
       <div id={styles.hero} />
       <ServicesSection />
       {/* <div id={styles.innerContainer}>

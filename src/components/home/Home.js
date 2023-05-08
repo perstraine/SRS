@@ -1,7 +1,6 @@
 import styles from "./Home.module.css";
 import HomeHeader from "./nav/HomeHeader";
 import ServicesSection from "./services/ServicesSection";
-import image from './assets/bottom.jpg'
 
 export default function Home() {
   return (

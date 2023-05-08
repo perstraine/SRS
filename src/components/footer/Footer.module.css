@@ -30,3 +30,18 @@
     text-align: right;
     align-self: center;
 }
+
+@media screen and (max-width:750px) {
+    .innerContainer{
+        flex-direction: column;
+    }
+    .copyright{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px){
+    .copyright{
+        padding-top: 20px;
+    }
+}

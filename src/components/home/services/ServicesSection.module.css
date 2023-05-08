@@ -21,12 +21,14 @@
 .tile{
     background: white;
     /* position: relative; */
-    width: 270px;
-    height: 190px;
+    width: 300px;
+    height: 210px;
     color: white;
     text-align: center;
     font-size: 25px;
     box-shadow: 5px 5px 7px grey;
+    background-position: center;
+
 }
 
 .tile:hover{

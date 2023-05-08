@@ -128,6 +128,7 @@ export default function ImageCarousel() {
           return (
             <Carousel.Slide>
               <img
+                key={index}
                 className={activeIndex === index ? "activeSlide" : "slide"}
                 src={image}
                 alt=""

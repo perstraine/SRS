@@ -1,9 +1,15 @@
 import styles from "./Ceiling.module.css";
+// import ImageCarousel from "../carousel/ImageCarousel";
 import image from "../../assets/ceiling.jpg";
+// import image1 from './assets/A.jpg'
+// import image2 from './assets/B.jpg'
+// import image3 from "./assets/C.jpg";
 
 export default function Ceiling() {
+  // const images = [image1, image2, image3]
   return (
     <div id={styles.outerContainer}>
+      {/* <ImageCarousel images={images}/> */}
       <img id={styles.hero} src={image} alt="Placeholder"></img>
       <div id={styles.innerContainer}>
         <div id={styles.title}>Suspended Ceiling Seismic Restraint</div>

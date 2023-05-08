@@ -12,10 +12,10 @@ export default function Home() {
         SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC
         SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC{" "}
       </div>
-      <HomeHeader />
+      {/* <HomeHeader /> */}
       <div id={styles.hero} />
       <ServicesSection />
-      <div id={styles.innerContainer}>
+      {/* <div id={styles.innerContainer}>
         <div id={styles.title}>Our Mission</div>
         <p>
           In the world of building components, coordination with other
@@ -49,7 +49,7 @@ export default function Home() {
           The team at SRS look forward to hearing from you in the near future.
         </p>
       </div>
-      <img id={styles.bottomhero} src={image} alt="Placeholder"></img>
+      <img id={styles.bottomhero} src={image} alt="Placeholder"></img> */}
     </div>
   );
 }

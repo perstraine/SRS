@@ -11,10 +11,13 @@ export default function Navigation() {
           <>
             <div className={styles.wrapper}>
               <Outlet />
-              <div className={styles.footer}><Footer/></div>
+              {/* <div className={styles.footer}><Footer/></div> */}
             </div>
           </>
-        );
+      );
+  }
+  if (location.pathname === "/wew") {
+    return(<Outlet/>)
   }
     return (
       <>

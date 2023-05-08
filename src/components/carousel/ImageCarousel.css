@@ -1,0 +1,79 @@
+
+/*-----------------Swiper-------------*/
+
+/* .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background: grey;
+  height: 200px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+
+/*----------------- Multi Carousel---------------*/
+
+
+/* .carouselImageHolder{
+  width: 768px;
+  display: flex;
+  justify-content: center;
+}
+.carouselImage{
+  width: 700px;
+}
+
+
+.react-multi-carousel-item{
+  opacity: 0.5;
+}
+
+.react-multi-carousel-item--active{
+  opacity:1;
+} */
+
+/* @media screen and (max-width:1400px) {
+.react-multi-carousel-track{
+
+}
+
+  .react-multi-carousel-item{
+  opacity: 0.5;
+}
+.react-multi-carousel-item--active{
+  opacity:1;
+}
+  .carouselImageHolder{
+    width: 100%;
+    height: 50vw;
+  }
+  .carouselImage{
+    width: 100%;
+  }
+  
+} */
+
+/*----------Mantine Carousel----------*/
+
+
+.activeSlide{
+  opacity: 1;
+  animation: fadeIn 0.7s;
+}
+
+.slide{
+  opacity: 0.5;
+}
+
+@keyframes fadeIn{
+  0% {opacity: 0.5;}
+  100% {opacity: 1;}
+}

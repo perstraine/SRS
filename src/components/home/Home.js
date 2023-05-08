@@ -1,9 +1,19 @@
-import styles from "./Mission.module.css";
-import image from "../../assets/mission.jpg";
+import styles from "./Home.module.css";
+import HomeHeader from "./nav/HomeHeader";
+import ServicesSection from "./services/ServicesSection";
 
-export default function Mission() {
+export default function Home() {
   return (
     <div id={styles.outerContainer}>
+      <div id={styles.placeholder}>
+        SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC{" "}
+        SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC{" "}
+        SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC
+        SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC{" "}
+      </div>
+      <HomeHeader />
+      <div id={styles.hero} />
+      <ServicesSection />
       <div id={styles.innerContainer}>
         <div id={styles.title}>Our Mission</div>
         <p>
@@ -21,8 +31,6 @@ export default function Mission() {
           timelines, with continued and honest communication between everyone
           involved.
         </p>
-        <img id={styles.hero} src={image} alt="Placeholder"></img>
-
         <p>
           We can provide our services for residential or commercial buildings
           and get involved at any stage of the project directly under a project
@@ -40,6 +48,7 @@ export default function Mission() {
           The team at SRS look forward to hearing from you in the near future.
         </p>
       </div>
+      <div id={styles.bottomhero}></div>
     </div>
   );
 }

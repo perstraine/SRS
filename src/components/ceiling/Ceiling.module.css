@@ -20,28 +20,25 @@
     color: #266386;
 }
 
-#hero{
-    width: 900px;
-}
-
 #special{
     display: flex;
     flex-direction: column;
     background-color: gray;
     width: 100%;
     align-items: center;
+    padding-top: 20px;
 }
 
 #specialTitle{
     font-weight: 800;
     text-decoration: underline;
     width:1100px;
-    padding: 10px 0 20px;
+    padding: 20px 0 0;
 }
 
 #specialtext{
     width: 1100px;
-    padding: 10px 0 40px;
+    padding: 10px 0 20px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -51,10 +48,6 @@
 }
 
 @media screen and (max-width: 900px){
-    #hero{
-        width: 100%;
-    }
-
     #innerContainer, #specialTitle, #specialtext{
         width: 600px;
     }

@@ -1,10 +1,15 @@
+import ImageCarousel from '../carousel/ImageCarousel';
 import styles from './Services.module.css'
-import image from "../../assets/services.jpg";
+import image1 from './assets/1.jpg'
+import image2 from './assets/2.jpg'
+import image3 from "./assets/3.jpg";
 
 export default function Services() {
-    return (
+  const images = [image1, image2, image3];
+  return (
+    <>
+      <ImageCarousel images={images}/>
       <div id={styles.outerContainer}>
-        <img id={styles.hero} src={image} alt="Placeholder"></img>
         <div id={styles.innerContainer}>
           <div id={styles.title}>Services Seismic Restraint</div>
           <p>
@@ -44,13 +49,18 @@ export default function Services() {
         <div id={styles.special}>
           <div id={styles.specialTitle}>What We Offer:</div>
           <div id={styles.specialtext}>
-            Seismic bracing design and PS1 documentation | Construction
-            monitoring and PS4 documentation | Design reviews | Assessment of
-            existing building services seismic bracing | Seismic restraint
-            assessment of existing floor fixed units | Assessment as part of
-            Technical Due Diligence | Remedial design | Consultancy services
+            <ul>
+              <li>Seismic bracing design and PS1 documentation</li>
+              <li>Construction monitoring and PS4 documentation</li>
+              <li>Design reviews</li>
+              <li>Assessment of existing building services seismic bracing</li>
+              <li>Assessment as part of Technical Due Diligence</li>
+              <li>Remedial design</li>
+              <li>Consultancy services</li>
+            </ul>
           </div>
         </div>
       </div>
-    );
+    </>
+  );
 }

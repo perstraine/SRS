@@ -1,4 +1,4 @@
-import styles from './Header.module.css'
+import styles from './HomeHeader.module.css'
 import logo from './assets/Logo.png'
 import { useNavigate ,useLocation} from 'react-router-dom';
 import { useState } from 'react';
@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 // import useWindowDimensions from '../../useWindowDimensions';
 
-export default function Header() {
+export default function HomeHeader() {
   // const { width } = useWindowDimensions();
   // const screenWidth = width;
     const navigate = useNavigate();
@@ -54,8 +54,6 @@ export default function Header() {
                 setActive("/suspendedceiling");
                 navigate("/suspendedceiling");
                 setIsOpen("false");
-              setDrop(false);
-
               }}
             >
               Suspended Ceiling
@@ -66,8 +64,6 @@ export default function Header() {
                 setActive("/wallandparition");
                 navigate("/wallandpartition");
                 setIsOpen("false");
-              setDrop(false);
-
               }}
             >
               Wall & Partition
@@ -78,8 +74,6 @@ export default function Header() {
                 setActive("/services");
                 navigate("/services");
                 setIsOpen("false");
-              setDrop(false);
-
               }}
             >
               Services
@@ -90,8 +84,6 @@ export default function Header() {
                 setActive("/specialist");
                 navigate("/specialist");
                 setIsOpen("false");
-              setDrop(false);
-
               }}
             >
               Specialist
@@ -202,7 +194,7 @@ export default function Header() {
                 navigate("/contact");
                 setIsOpen("false");
               }}
-              style={{ borderBottom: "1px solid #266386" }}
+              // style={{ borderBottom: "1px solid #266386" }}
             >
               Contact Us
             </div>

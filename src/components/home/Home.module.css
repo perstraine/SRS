@@ -2,6 +2,7 @@
     opacity: 0;
     position: absolute;
     cursor: context-menu;
+    z-index: -10;
 }
 
 #outerContainer{

@@ -23,7 +23,8 @@
 #special{
     display: flex;
     flex-direction: column;
-    background-color: gray;
+    /* background-color: rgba(16, 102, 153, .7); */
+    background-color: white;
     width: 100%;
     align-items: center;
     padding-top: 20px;

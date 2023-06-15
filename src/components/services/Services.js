@@ -8,7 +8,7 @@ export default function Services() {
   const images = [image1, image2, image3];
   return (
     <>
-      <ImageCarousel images={images}/>
+      <ImageCarousel images={images} />
       <div id={styles.outerContainer}>
         <div id={styles.innerContainer}>
           <div id={styles.title}>Services Seismic Restraint</div>
@@ -47,17 +47,21 @@ export default function Services() {
           </p>
         </div>
         <div id={styles.special}>
-          <div id={styles.specialTitle}>What We Offer:</div>
-          <div id={styles.specialtext}>
-            <ul>
-              <li>Seismic bracing design and PS1 documentation</li>
-              <li>Construction monitoring and PS4 documentation</li>
-              <li>Design reviews</li>
-              <li>Assessment of existing building services seismic bracing</li>
-              <li>Assessment as part of Technical Due Diligence</li>
-              <li>Remedial design</li>
-              <li>Consultancy services</li>
-            </ul>
+          <div id={styles.specialContainer}>
+            <div id={styles.specialTitle}>What We Offer:</div>
+            <div id={styles.specialtext}>
+              <ul>
+                <li>Seismic bracing design and PS1 documentation</li>
+                <li>Construction monitoring and PS4 documentation</li>
+                <li>Design reviews</li>
+                <li>
+                  Assessment of existing building services seismic bracing
+                </li>
+                <li>Assessment as part of Technical Due Diligence</li>
+                <li>Remedial design</li>
+                <li>Consultancy services</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

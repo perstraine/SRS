@@ -1,5 +1,4 @@
 #outerContainer{
-    /* background-color: #E5F0FD; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -21,12 +20,17 @@
 }
 
 #special{
+    background-color: #106699;
+    width: 100%;
+    padding: 15px 0;
+}
+
+#specialContainer{
     display: flex;
     flex-direction: column;
-    background-color: gray;
-    width: 100%;
     align-items: center;
-    padding-top: 20px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .4);
 }
 
 #specialTitle{
@@ -38,7 +42,7 @@
 
 #specialtext{
     width: 1100px;
-    padding: 10px 0 20px;
+    padding: 10px 0 10px;
 }
 
 @media screen and (max-width: 1100px) {

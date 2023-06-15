@@ -45,21 +45,23 @@ export default function Specialist() {
           </p>
         </div>
         <div id={styles.special}>
-          <div id={styles.specialTitle}>What We Offer:</div>
-          <div id={styles.specialtext}>
-            <ul>
-              <li>Seismic bracing design and PS1 documentation</li>
-              <li>Construction monitoring and PS4 documentation</li>
-              <li>Design reviews</li>
-              <li>Assessment of existing seismic bracing</li>
-              <li>
-                Seismic restraint assessment of existing specialist equipment or
-                feature items
-              </li>
-              <li>Assessment as part of Technical Due Diligence</li>
-              <li>Remedial design</li>
-              <li>Consultancy services</li>
-            </ul>
+          <div id={styles.specialContainer}>
+            <div id={styles.specialTitle}>What We Offer:</div>
+            <div id={styles.specialtext}>
+              <ul>
+                <li>Seismic bracing design and PS1 documentation</li>
+                <li>Construction monitoring and PS4 documentation</li>
+                <li>Design reviews</li>
+                <li>Assessment of existing seismic bracing</li>
+                <li>
+                  Seismic restraint assessment of existing specialist equipment
+                  or feature items
+                </li>
+                <li>Assessment as part of Technical Due Diligence</li>
+                <li>Remedial design</li>
+                <li>Consultancy services</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

@@ -6,7 +6,6 @@
     flex-direction: column;
     align-items: center;
     z-index: 3;
-    /* border-bottom: solid 1px black; */
 }
 
 #logomotto{
@@ -23,7 +22,6 @@
 }
 
 #logoContainer{
-    /* width: 40%; */
     padding: 3px 0 0 30px;
     display: flex;
     justify-content: space-around;
@@ -40,125 +38,111 @@
     padding-left: 30px;
 }
 
-/* #navbarModal[isopen=true]{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    top:0;
-    height: 100%;
-}
-
-#navbarModal[isopen=false]{
-    display: none;
-} */
-
-#navbar[isopen=true]{
-    position: fixed;
-    right:0;
-    top:0;
-    background-color: white;
-    display: flex;
-    width: 250px;
-    height: 100%;
-    /* justify-content: space-between; */
-    flex-direction: column;
-    box-shadow: -2px 0 5px grey;
-    transform: translateX(0%);
-	transition: all 0.3s ease-in-out;
-}
-#navbar[isopen=false]{
-    /* display: none; */
-        position: fixed;
-    right:0;
-    top:0;
-        background-color: white;
-    display: flex;
-    width: 250px;
-    height: 100%;
-
-    /* justify-content: space-between; */
-    flex-direction: column;
-    box-shadow: -2px 0 5px grey;
-    transform: translateX(100%);
-    transition: all 0.3s ease-in-out;
-}
-
-#active{
-    font-weight: 700;
-}
-
-.navItem{
-    width: 100%;
-    font-size: 18px;
-    padding: 20px 0;
-    color: #266386;
-    cursor: pointer;
-    text-align: center;
-    border-top: #266386 solid 1px;
-}
-
-.navItem[under="true"]{
-    border-bottom: #266386 solid 1px;
-
-}
-
-.navItem:hover{
-    background-color: rgb(202, 202, 202);
-}
-
-#activeDrop{
-    position: absolute;
-    /* z-index: 3; */
-    right: 250px;
-    background: white;
-    width: 150px;
-    height: fit-content;
-    margin-left: 50%;
-    margin-top: 50px;
-    text-align: center;
-    box-shadow: -2px 0 5px grey;
-
-}
-
-#inlineActiveDrop{
-    display: none
-}
-
-#inactiveDrop{
-    display: none;
-}
-.dropItem{
-    font-size: 16px;
-    background: white;
-    border-bottom: #266386 solid 1px;
-    padding: 3px;
-    cursor: pointer;
-
-}
-
-.dropItem:hover{
-    background-color: grey;
-    color: white;
-}
-
 #hamburger[isopen=false]{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
     padding-right: 20px;
     cursor: pointer;
-    color: white;
+    color: #ffffff;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
-#hamburger[isopen=true]{
+#navbarContainer[isopen=true]{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbarContainer[isopen=false]{
     display: none;
 }
 
+#navPlaceholder{
+    height: 100%;
+    width: calc(100vw - 250px)
+}
+
+#navbar{
+    width: 250px;
+    height: 100%;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    border-left: solid 5px #106699;
+    z-index: 11;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar[isopen =true]{
+    transform: translateX(0%);
+    transition: all 0.3s ease-in-out;
+}
+
+#navbar[isopen =false]{
+    transform: translateX(0%);
+    transition: all 0.3s ease-in-out;
+}
+
 #close{
-   font-size: 20px;
-    font-weight: 700;
-    padding: 20px 20px 10px;
+    align-self: flex-end;
+    font-size: 25px;
+    padding: 10px 20px 10px ;
     cursor: pointer;
-    text-align: end;
+}
+
+.navItem{
+    font-size: 20px;
+    width: calc(100%-20px);
+    background-color: rgb(46, 46, 46);
+    border-bottom: solid 1px grey;
+    border-top: solid 1px grey;
+    padding: 10px 0 10px 20px;
+    cursor: pointer;
+}
+
+.navItem:hover{
+    background-color: rgb(83, 83, 83);
+}
+
+#active{
+    background-color: #106699;
+}
+
+#active:hover{
+    background-color: rgb(66, 123, 156);
+
+}
+
+#showDrop{
+    display: block;
+}
+
+#hideDrop{
+    display: none;
+}
+
+.activeDropItem{
+    background-color: #106699;
+}
+
+.dropItemText{
+    width: 100%;
+    padding: 10px 0 10px 35px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.dropItemText:hover{
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 @media screen and (max-width: 550px){
@@ -169,31 +153,12 @@
     #logo{
         width: 80px;
     }
+
     #headerContainer{
-        height: auto;
+        height: 50px;
     }
 
     #navbar[isopen=true]{
         width: 200px;
-    }
-
-    .navItem{
-        padding: 10px 0;
-    }
-
-    #activeDrop{
-        display: none;
-    }
-    #inlineActiveDrop{
-        display: block;
-        padding-top: 5px;
-    }
-
-    .dropItem{
-        width: 200px;
-    }
-
-    #close{
-        padding: 10px 20px 10px;
     }
 }

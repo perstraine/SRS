@@ -6,10 +6,11 @@ export default function Home() {
   return (
     <div id={styles.outerContainer}>
       <div id={styles.placeholder}>
-        SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC{" "}
-        SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC{" "}
-        SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC
-        SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC SEISMIC{" "}
+        Seismic Restraint Ceiling Wall Partition Services Bracing Seismic
+        Restraint Ceiling Wall Partition Services Bracing Seismic Restraint
+        Ceiling Wall Partition Services Bracing Seismic Restraint Ceiling Wall
+        Partition Services Bracing Seismic Restraint Ceiling Wall Partition
+        Services Bracing
       </div>
       <HomeHeader />
       <div id={styles.hero} />

@@ -22,23 +22,22 @@ export default function ContactForm() {
             <span id={styles.officeemail}>office@srsengineering.co.nz</span> or
             fill out the form below.
           </p>
+          <div id={styles.phone}>
+            You can also contact us at{" "}
+            <span id={styles.officeemail}>021 0225 6165</span>.
+          </div>
           <p>*Required</p>
           <form
             id={styles.contactForm}
             onSubmit={(e) => {
-              e.preventDefault()
+              e.preventDefault();
               submitForm(e.target);
             }}
           >
             <div id={styles.nameSection}>
               <div className={styles.formItem}>
                 <label for="firstname">First Name*</label>
-                <input
-                  name="fname"
-                  id="firstname"
-                  type="text"
-                  required
-                />
+                <input name="fname" id="firstname" type="text" required />
               </div>
               <div className={styles.formItem}>
                 <label for="lastname">Last Name*</label>

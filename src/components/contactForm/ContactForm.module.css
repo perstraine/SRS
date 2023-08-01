@@ -85,6 +85,10 @@
     cursor: pointer;
 }
 
+#phone{
+    padding-bottom: 30px;
+}
+
 @media screen and (max-width: 700px) {
     #nameSection{
         flex-direction: column;
